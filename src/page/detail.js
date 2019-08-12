@@ -14,7 +14,9 @@ function AryIncludes() {
 }
 
 class DetailPage {
-
+    init = () => {
+        console.log("初始化")
+    }
 }
 
 console.log("detail page")

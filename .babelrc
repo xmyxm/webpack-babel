@@ -24,6 +24,7 @@
         ]
     ]
     ,"plugins": [
+      ["@babel/plugin-proposal-class-properties"],
       ["@babel/plugin-transform-runtime", {
         //"corejs": 3, // 来决定来决定是否使用 babel/runtime-corejs，以及其对应版本。2和3版本的区别在于出现在 Babel 7.4.0 之后，你可以选择引入 @babel/runtime-corejs3，设置 corejs: 3 来帮助您实现对实例方法(Object.assign, Array.from)的支持, 2的版本默认支持 Promise, Set, Symbol，默认false,
         "regenerator": true, // 默认true, 默认情况下回根据 browserslist 来确认是否转化 generator 函数 或 async 函数，如果 @babel/preset-env -> ignoreBrowserslistConfig = true 则都转换 generator 和 async 语法。
